@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(248,249,250);
+    margin: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(229,231,235);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    height: 100px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user {
+    display: flex;
+}
+
+.bt-tema {
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+.bt-tema img {
+    width: 20px;
+}
+
+.menu-user {
+    border: none;
+    width: 60px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user img {
+    width: 20px;
+}
+
+.contaiter {
+    display: flex;
+}
+
+.painelesquerdo {
+    background-color: rgb(255,255,255);
+    border-right: 1px solid rgb(229,231,235);
+    width: 280px;
+    min-width: 280px;
+    height: 90vh;
+}
+
+.botaoPainel {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    width: 90%;
+    height: 5vh;
+    border: 1px solid rgb(229,231,235);
+    border-radius: 15px;
+    margin: 5%;
+}
+
+#btn-inicio {
+    background-color: #238b50;
+    color: white;
+}
+
+.botaoPainel img {
+    width: 30px;
+    height: 30px;
+}
+
+.paineldireito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(248,249,250);
+    gap: 2%; 
+    width: 90vw;
+    margin-top: 30px;
+    padding: 5px;
+
+}
+
+.container-conjunto1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 65vw;
+}
+
+#conteudo-q1 {
+    background-color: rgba(237, 243, 242);
+    border: solid rgba(192, 218, 205) 1px;
+    border-radius: 15px;
+    height: 110%;
+    padding: 16px;
+}
+
+.container-conjunto2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 65vw;
+
+    background-color: rgb(255, 255, 255);
+    border: solid rgb(229, 231, 235) 1px;
+    border-radius: 15px;
+}
+
+#conteudo-q2 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.check-container {
+    display: flex;
+    border: solid rgba(229, 231, 235) 1px;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.btn-salvar {
+    color: white;
+    background-color: #238b50;
+    padding: 10px;
+    border: solid 0px;
+    border-radius: 10px;
+}

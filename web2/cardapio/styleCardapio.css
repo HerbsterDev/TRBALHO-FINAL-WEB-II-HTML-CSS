@@ -1,0 +1,261 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f8f9fa;
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* HEADER */
+
+header{
+    background:white;
+    height:70px;
+    border-bottom:1px solid #e5e7eb;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 20px;
+}
+
+.header-left{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.container-nome-projeto h1{
+    font-size:22px;
+}
+
+.container-nome-projeto p{
+    font-size:11px;
+    color:#7a808d;
+}
+
+.header-right{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.bt-tema{
+    width:38px;
+    height:38px;
+    border:none;
+    background:white;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.bt-tema:hover{
+    background:#f1f5f9;
+}
+
+.bt-tema img{
+    width:20px;
+    height:20px;
+}
+
+.menu-user{
+    display:flex;
+    align-items:center;
+    padding:6px 12px;
+    border-radius:8px;
+    background:#f8f9fa;
+}
+
+.user{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.user img{
+    width:20px;
+    height:20px;
+}
+
+/* CONTAINER */
+
+.container{
+    display:flex;
+}
+
+/* MENU */
+
+.painelesquerdo{
+    width:220px;
+    min-height:calc(100vh - 70px);
+    background:white;
+    border-right:1px solid #e5e7eb;
+    padding-top:15px;
+}
+
+.botaoPainel{
+    width:90%;
+    margin:auto;
+    margin-bottom:10px;
+    height:45px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding-left:12px;
+    border-radius:10px;
+    text-decoration:none;
+    color:#333;
+    transition:.3s;
+}
+
+.botaoPainel:hover{
+    background:#e9f7ef;
+    transform:translateX(3px);
+}
+
+.botaoPainel img{
+    width:22px;
+    height:22px;
+}
+
+.ativo{
+    background:#238b50;
+    color:white;
+}
+
+/* CONTEÚDO */
+
+.paineldireito{
+    flex:1;
+    max-width:1200px;
+    padding:20px;
+}
+
+.titulo-cardapio{
+    background:white;
+    border:1px solid #238b50;
+    border-radius:12px;
+    padding:18px;
+    margin-bottom:20px;
+}
+
+.titulo-cardapio h2{
+    color:#238b50;
+}
+
+.titulo-cardapio p{
+    color:#666;
+    margin-top:5px;
+}
+
+/* DIAS */
+
+.dia{
+    background:white;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    padding:18px;
+    margin-bottom:20px;
+    box-shadow:0 1px 3px rgba(0,0,0,.05);
+}
+
+.dia h3{
+    color:#238b50;
+    margin-bottom:15px;
+}
+
+/* CARDS */
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.card{
+    width:290px;
+    min-height:220px;
+    border-radius:12px;
+    overflow:hidden;
+    background:white;
+    transition:.3s;
+    cursor:pointer;
+    position:relative;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.card img{
+    width:100%;
+    height:140px;
+    object-fit:cover;
+}
+
+.card h4{
+    padding:12px 12px 6px;
+}
+
+.card p{
+    padding:0 12px 12px;
+    font-size:13px;
+}
+
+/* STATUS */
+
+.disponivel{
+    border:2px solid #22c55e;
+}
+
+.restrito{
+    border:2px solid #ef4444;
+}
+
+.disponivel p{
+    color:#22c55e;
+}
+
+.restrito p{
+    color:#ef4444;
+}
+
+.status{
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:28px;
+    height:28px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-weight:bold;
+    font-size:14px;
+}
+
+.status-ok{
+    background:#22c55e;
+}
+
+.status-erro{
+    background:#ef4444;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+    .painelesquerdo{
+        width:180px;
+    }
+
+    .card{
+        width:100%;
+    }
+}
