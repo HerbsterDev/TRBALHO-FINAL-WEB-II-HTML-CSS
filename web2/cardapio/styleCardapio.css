@@ -5,10 +5,9 @@
 }
 
 body {
-    background-color: rgb(248, 249, 250);
+    background-color: rgb(248, 249, 250); /* rgb(15, 20, 25) */
     font-family: 'Segoe UI', sans-serif;
 }
-
 
 header {
     background: white;
@@ -79,13 +78,10 @@ header {
     height: 20px;
 }
 
-
 .container {
     display: flex;
     width: 100%;
 }
-
-
 
 .painelesquerdo {
     width: 280px;
@@ -115,7 +111,6 @@ header {
     transform: translateX(3px);
 }
 
-
 .icone-painel {
     width: 22px;
     height: 22px;
@@ -124,7 +119,6 @@ header {
     background-position: center;
     transition: background-image 0.3s;
 }
-
 
 .botaoPainel.ativo {
     background: #238b50;
@@ -169,14 +163,12 @@ header {
     background-image: url('../inicio/imagens/painelEsquerdo/cardapioSemanal/calendarGreen.png');
 }
 
-
-
 .paineldireito {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1;
-    background-color: rgb(248, 249, 250);
+    background-color: rgb(248, 249, 250); /* rgb(15, 20, 25) */
     gap: 20px;
     padding: 20px;
     margin-top: 30px;
@@ -197,7 +189,7 @@ header {
 }
 
 .titulo-cardapio h2 {
-    color: #238b50;
+    color: rgb(0, 0, 0); /* rgb(255, 255, 255) */
 }
 
 .titulo-cardapio p {
@@ -209,7 +201,6 @@ header {
     color: #238b50;
     margin-bottom: 15px;
 }
-
 
 .cards {
     display: flex;
@@ -224,7 +215,8 @@ header {
     min-height: 220px;
     border-radius: 12px;
     overflow: hidden;
-    background: white;
+    background-color: rgba(237, 243, 242); /* rgb(15, 36, 35) */
+    border: solid rgba(192, 218, 205) 1px; /* rgb(15, 45, 41) */
     transition: .3s;
     cursor: pointer;
     position: relative;
@@ -243,14 +235,13 @@ header {
 
 .card h4 {
     padding: 12px 12px 6px;
+    color: rgb(0, 0, 0); /* rgb(255, 255, 255) */
 }
 
 .card p {
     padding: 0 12px 12px;
     font-size: 13px;
 }
-
-/* CARDS STATUS STYLES */
 
 .disponivel {
     border: 2px solid #22c55e;
@@ -290,7 +281,6 @@ header {
 .status-erro {
     background: #ef4444;
 }
-
 
 @media (max-width: 900px) {
     .painelesquerdo {
